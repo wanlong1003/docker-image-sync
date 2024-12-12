@@ -22,8 +22,8 @@ jobs:
         
       - name: Sync docker images
         run: |
-          chmod +x sync_docker_mirror.sh
-          ./sync_docker_mirror.sh
+          chmod +x sync_images.sh
+          ./sync_images.sh
         env:
           REGISTRY: ${{ vars.REGISTRY }}
         
