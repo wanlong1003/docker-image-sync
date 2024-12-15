@@ -11,6 +11,7 @@ images=(
     ["mongo-express:latest"]="mongo-express:latest"
     ["gitlab/gitlab-ce:latest"]="gitlab-ce:latest"
     ["nginx:latest"]="nginx:latest"
+    ["caddy:latest"]="caddy:latest"
     ["jenkins/jenkins:latest"]="jenkins:latest"
     ["minio/minio:latest"]="minio:latest"
     ["apache/kafka:latest"]="kafka:latest"
