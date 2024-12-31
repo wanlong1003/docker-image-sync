@@ -24,6 +24,9 @@ images=(
     ["mikolatero/vlmcsd:latest"]="mikolatero-vlmcsd:latest"
     ["vlmcsd/vlmcsd:latest"]="vlmcsd:latest"
     ["jellyfin/jellyfin:latest"]="jellyfin:latest"
+    ["elasticsearch:latest"]="elasticsearch:latest"
+    ["exceptionless/exceptionless:latest"]="exceptionless:latest"
+    ["ossrs/srs:latest"]="ossrs/srs:latest"
 )
 
 registry="${REGISTRY}"
