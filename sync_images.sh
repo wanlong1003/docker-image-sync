@@ -26,7 +26,6 @@ images=(
     ["jellyfin/jellyfin:latest"]="jellyfin:latest"
     ["elasticsearch:latest"]="elasticsearch:latest"
     ["exceptionless/exceptionless:latest"]="exceptionless:latest"
-    ["ossrs/srs:latest"]="ossrs/srs:latest"
 )
 
 registry="${REGISTRY}"
