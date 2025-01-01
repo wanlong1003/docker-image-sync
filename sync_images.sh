@@ -24,7 +24,7 @@ images=(
     ["mikolatero/vlmcsd:latest"]="mikolatero-vlmcsd:latest"
     ["vlmcsd/vlmcsd:latest"]="vlmcsd:latest"
     ["jellyfin/jellyfin:latest"]="jellyfin:latest"
-    ["docker.elastic.co/elasticsearch/elasticsearch:8.2.3"]="elasticsearch:8.2.3"
+    ["docker.elastic.co/elasticsearch/elasticsearch:8.17.0"]="elasticsearch:8.17.0"
     ["docker.elastic.co/kibana/kibana:8.17.0"]="kibana:8.17.0"
     ["exceptionless/exceptionless:latest"]="exceptionless:latest"
 )
