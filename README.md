@@ -8,4 +8,4 @@
 3. 创建名为 `REGISTRY` 的 `Environment variables`, 值为 阿里云容器实例中的 `公网`。例如: `registry.cn-hangzhou.aliyuncs.com`
 
 如下图所示:
-![](./environments_config.png)
+![](environments_config.png)
