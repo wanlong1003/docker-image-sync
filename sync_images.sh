@@ -36,6 +36,7 @@ images=(
     ["ollama/ollama:latest"]="ollama:latest"
     ["registry:latest"]="registry:latest"
     ["consul:latest"]="consul:latest"
+    ["deliters/subsonic:latest"]="subsonic:latest"
 )
 
 registry="${REGISTRY}"
