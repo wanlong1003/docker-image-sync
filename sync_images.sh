@@ -39,10 +39,8 @@ images=(
     ["deliters/subsonic:latest"]="subsonic:latest"
 )
 
-registry="${REGISTRY}"
-
 for image in "${!images[@]}"; do
-    target=${registry}${images[$image]}
+    target=${REGISTRY}/${NAMESPACE}/${images[$image]}
     echo "Processing $image ---> $target"
     docker pull $image
     docker tag $image $target
