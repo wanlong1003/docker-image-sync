@@ -1,16 +1,6 @@
 #!/bin/bash
-registry="${REGISTRY}"
-namespace="${NAMESPACE}"
-image_name="${IMAGENAME}"
-image_version="${IMAGEVERSION}"
-
-source="${image_name}:${image_version}"
-target="${registry}/${namespace}/${image_name}:${image_version}"
-
-echo "$registry"
-echo "$namespace"
-echo "$image_name"
-echo "$image_version"
+source="${IMAGENAME}:${IMAGEVERSION}"
+target="${REGISTRY}/${NAMESPACE}/${IMAGENAME}:${IMAGEVERSION}"
 
 echo "Processing  $source ---> $target"
 docker pull $source
