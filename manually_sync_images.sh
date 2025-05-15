@@ -2,10 +2,10 @@
 registry="${REGISTRY}"
 namespace="${NAMESPACE}"
 image_name="${IMAGENAME}"
-images_version="${IMAGEVERSION}"
+image_version="${IMAGEVERSION}"
 
-source="${image_name}:{$images_version}"
-target="${registry}/${namespace}/${image_name}:${images_version}"
+source="${image_name}:{$image_version}"
+target="${registry}/${namespace}/${image_name}:${image_version}"
 
 echo "Processing  $source ---> $target"
 docker pull $source
