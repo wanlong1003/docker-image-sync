@@ -33,4 +33,5 @@ jobs:
           ./sync_images.sh
         env:
           REGISTRY: ${{ vars.REGISTRY }}
+          NAMESPACE: ${{ vars.NAMESPACE }}
         
