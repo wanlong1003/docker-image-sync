@@ -42,7 +42,7 @@ jobs:
         
       - name: Sync docker images
         env:
-          REGISTRY: registry.cn-hangzhou.aliyuncs.com
+          REGISTRY: ${{ vars.REGISTRY }}
           NAMESPACE: ${{ github.event.inputs.namespace }}
           IMAGENAME: ${{ github.event.inputs.image_name }}
           IMAGEVERSION: ${{ github.event.inputs.image_version }}
