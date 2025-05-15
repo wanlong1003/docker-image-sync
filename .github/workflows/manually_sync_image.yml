@@ -45,7 +45,7 @@ jobs:
           REGISTRY: registry.cn-hangzhou.aliyuncs.com
           NAMESPACE: ${{ github.event.inputs.namespace }}
           IMAGENAME: ${{ github.event.inputs.image_name }}
-          IMAGEVERSION: $"{{ github.event.inputs.image_version }}"
+          IMAGEVERSION: ${{ github.event.inputs.image_version }}
         run: |
           chmod +x manually_sync_images.sh
           ./manually_sync_images.sh
