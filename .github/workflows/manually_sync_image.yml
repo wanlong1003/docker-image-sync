@@ -10,7 +10,7 @@ on:
       image_version:
         description: '版本'
         required: true
-        default: 'lastest'
+        default: 'latest'
       namespace:
         description: '命名空间'
         required: true
