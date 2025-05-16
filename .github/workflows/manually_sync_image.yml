@@ -47,6 +47,8 @@ jobs:
           IMAGENAME: ${{ github.event.inputs.image_name }}
           IMAGEVERSION: ${{ github.event.inputs.image_version }}
         run: |
-          chmod +x manually_sync_images.sh
-          ./manually_sync_images.sh
+          docker pull "${IMAGENAME}:${IMAGEVERSION}"
+          docker tag "${IMAGENAME}:${IMAGEVERSION}" "${REGISTRY}/${NAMESPACE}/${IMAGENAME}:${IMAGEVERSION}"
+          docker push "${REGISTRY}/${NAMESPACE}/${IMAGENAME}:${IMAGEVERSION}"
+
         
