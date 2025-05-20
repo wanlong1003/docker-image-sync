@@ -37,6 +37,7 @@ images=(
     ["registry:latest"]="registry:latest"
     ["consul:latest"]="consul:latest"
     ["deliters/subsonic:latest"]="subsonic:latest"
+    ["gitea/gitea:latest"]="gitea/gitea:latest"
 )
 
 for image in "${!images[@]}"; do
