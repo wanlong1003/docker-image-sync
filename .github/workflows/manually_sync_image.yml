@@ -19,6 +19,10 @@ on:
           - wheny
           - baoor
         default: 'wheny'
+      my_image_name:
+        description: '我的镜像名称'
+        required: true
+        default: ''
 jobs:
   sync:
     runs-on: ubuntu-latest
@@ -41,14 +45,15 @@ jobs:
           password: ${{ secrets.PASSWORD }}
         
       - name: Sync docker images
-        env:
-          REGISTRY: ${{ vars.REGISTRY }}
-          NAMESPACE: ${{ github.event.inputs.namespace }}
+        env:          
           IMAGENAME: ${{ github.event.inputs.image_name }}
           IMAGEVERSION: ${{ github.event.inputs.image_version }}
+          REGISTRY: ${{ vars.REGISTRY }}
+          NAMESPACE: ${{ github.event.inputs.namespace }}
+          MYIMAGENAME: ${{ github.event.inputs.my_image_name }}
         run: |
           docker pull "${IMAGENAME}:${IMAGEVERSION}"
-          docker tag "${IMAGENAME}:${IMAGEVERSION}" "${REGISTRY}/${NAMESPACE}/${IMAGENAME}:${IMAGEVERSION}"
-          docker push "${REGISTRY}/${NAMESPACE}/${IMAGENAME}:${IMAGEVERSION}"
+          docker tag "${IMAGENAME}:${IMAGEVERSION}" "${REGISTRY}/${NAMESPACE}/${MYIMAGENAME}:${IMAGEVERSION}"
+          docker push "${REGISTRY}/${NAMESPACE}/${MYIMAGENAME}:${IMAGEVERSION}"
 
         
