@@ -38,6 +38,7 @@ images=(
     ["consul:latest"]="consul:latest"
     ["deliters/subsonic:latest"]="subsonic:latest"
     ["gitea/gitea:latest"]="gitea:latest"
+    ["gitea/act_runner:latest"]="act_runner:latest"
 )
 
 for image in "${!images[@]}"; do
