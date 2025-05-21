@@ -38,7 +38,11 @@ images=(
     ["consul:latest"]="consul:latest"
     ["deliters/subsonic:latest"]="subsonic:latest"
     ["gitea/gitea:latest"]="gitea:latest"
-    ["gitea/act_runner:latest"]="act_runner:latest"
+    ["gitea/act_runner:latest"]="gitea-act_runner:latest"
+    ["gitea/runner-images:latest"]="gitea-runner-images:latest"
+    ["gitea/runner-images:ubuntu-latest"]="gitea-runner-images:ubuntu-latest"
+    ["gitea/runner-images:ubuntu-24.04"]="gitea-runner-images:ubuntu-24.04"
+    ["gitea/runner-images:ubuntu-22.04"]="gitea-runner-images:ubuntu-22.04"
 )
 
 for image in "${!images[@]}"; do
