@@ -43,6 +43,8 @@ images=(
     ["gitea/runner-images:ubuntu-latest"]="gitea-runner-images:ubuntu-latest"
     ["gitea/runner-images:ubuntu-24.04"]="gitea-runner-images:ubuntu-24.04"
     ["gitea/runner-images:ubuntu-22.04"]="gitea-runner-images:ubuntu-22.04"
+
+    ["postman/newman:latest"]="newman:latest"
 )
 
 for image in "${!images[@]}"; do
