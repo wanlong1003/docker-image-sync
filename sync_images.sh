@@ -12,6 +12,7 @@ images=(
     ["dbeaver/cloudbeaver:latest"]="cloudbeaver:latest"
     ["dpage/pgadmin4:latest"]="pgadmin4:latest"
     ["mongo-express:latest"]="mongo-express:latest"
+    ["redis/redisinsight:latest"]="redisinsight:latest"
     
     ["gitlab/gitlab-ce:latest"]="gitlab-ce:latest"
     ["nginx:latest"]="nginx:latest"
