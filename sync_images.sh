@@ -45,6 +45,7 @@ images=(
     ["gitea/runner-images:ubuntu-24.04"]="gitea-runner-images:ubuntu-24.04"
     ["gitea/runner-images:ubuntu-22.04"]="gitea-runner-images:ubuntu-22.04"
     ["ghcr.io/jeffvli/feishin:latest"]="feishin:latest"
+    ["kaneo/kaneo:latest"]="kaneo:latest"
 
     ["postman/newman:latest"]="newman:latest"
 )
