@@ -20,6 +20,7 @@ images=(
     ["jenkins/jenkins:latest"]="jenkins:latest"
     
     ["minio/minio:latest"]="minio:latest"
+    ["rustfs/rustfs:latest"]="rustfs:latest"
     ["apache/kafka:latest"]="kafka:latest"
     ["rabbitmq:latest"]="rabbitmq:latest"
     ["exceptionless/exceptionless:latest"]="exceptionless:latest"
