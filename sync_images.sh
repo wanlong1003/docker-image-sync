@@ -18,6 +18,7 @@ images=(
     ["nginx:latest"]="nginx:latest"
     ["caddy:latest"]="caddy:latest"
     ["jenkins/jenkins:latest"]="jenkins:latest"
+    ["openproject/openproject:16"]="openproject:16"
     
     ["minio/minio:latest"]="minio:latest"
     ["rustfs/rustfs:latest"]="rustfs:latest"
