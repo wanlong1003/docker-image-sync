@@ -50,6 +50,7 @@ images=(
     ["kaneo/kaneo:latest"]="kaneo:latest"
 
     ["postman/newman:latest"]="newman:latest"
+    ["hoppscotch/hoppscotch:latest"]="hoppscotch:latest"
 )
 
 for image in "${!images[@]}"; do
