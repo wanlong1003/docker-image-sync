@@ -51,6 +51,8 @@ images=(
 
     ["postman/newman:latest"]="newman:latest"
     ["hoppscotch/hoppscotch:latest"]="hoppscotch:latest"
+
+    [scalarapi/aspire-api-reference:latest]="baoor/scalarapi-aspire-api-reference:latest"
 )
 
 for image in "${!images[@]}"; do
