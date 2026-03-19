@@ -28,8 +28,10 @@ images=(
     
     ["mcr.microsoft.com/dotnet/sdk:8.0"]="dotnet-sdk:8.0"
     ["mcr.microsoft.com/dotnet/sdk:9.0"]="dotnet-sdk:9.0"
+    ["mcr.microsoft.com/dotnet/sdk:10.0"]="dotnet-sdk:10.0"
     ["mcr.microsoft.com/dotnet/aspnet:8.0"]="dotnet-aspnet:8.0"
     ["mcr.microsoft.com/dotnet/aspnet:9.0"]="dotnet-aspnet:9.0"
+    ["mcr.microsoft.com/dotnet/aspnet:10.0"]="dotnet-aspnet:10.0"
     ["node:latest"]="node:latest"
     
     ["ossrs/srs:latest"]="srs:latest"
